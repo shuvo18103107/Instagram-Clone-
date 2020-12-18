@@ -1,3 +1,5 @@
+import 'package:flutter/cupertino.dart';
+
 class Post {
   final String userImage;
   final String username;
