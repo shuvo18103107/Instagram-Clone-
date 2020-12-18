@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'package:instagram_clone/post.dart';
 import 'package:instagram_clone/story.dart';
 
 void main() {
@@ -62,6 +63,81 @@ class _HomePageState extends State<HomePage> {
         "Fredy")
   ];
 
+  List<Post> posts = [
+    Post(
+        username: "Shuvo",
+        userImage:
+            "https://scontent.fdac70-1.fna.fbcdn.net/v/t1.0-9/36643304_654730291548390_8717111640241209344_n.jpg?_nc_cat=100&ccb=2&_nc_sid=174925&_nc_eui2=AeF88y3UOCOsockKLBzGzmuCd6ITqOCBXEp3ohOo4IFcSp90h8pOCFSW5Urqfj_HXwsOcjKJRnDAVKuHIwDvqgVd&_nc_ohc=w3YT59knUB4AX9kVs9U&_nc_ht=scontent.fdac70-1.fna&oh=b13be45ccd98720a26ab757b131dcdc0&oe=600234FC",
+        postImage:
+            "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        caption: "Setup Done Finally 🔥"),
+    Post(
+        username: "Tiana",
+        userImage:
+            "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        postImage:
+            "https://images.pexels.com/photos/2793175/pexels-photo-2793175.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        caption: "High rise buildings near body of water 💦"),
+    Post(
+        username: "Noushad",
+        userImage:
+            "https://scontent.fdac70-1.fna.fbcdn.net/v/t1.0-9/120762511_2639856109601571_7378144054375310935_n.jpg?_nc_cat=103&ccb=2&_nc_sid=174925&_nc_eui2=AeElJ0sULJBms8uYrcTUkRmbuhk-WFR0Kp66GT5YVHQqnuS31zi89Ke_xJfFnMseojs9FKauOJ-rL9VB-lmVKjiN&_nc_ohc=WUVsNydNUpwAX-weDvk&_nc_ht=scontent.fdac70-1.fna&oh=9fffc747946d594b1490e5e8389bb06f&oe=60022264",
+        postImage:
+            "https://i.pinimg.com/564x/7e/12/40/7e124040182a91a58cc138211870179f.jpg",
+        caption: "They Live We Sleep"),
+    Post(
+        username: 'Brennon',
+        userImage:
+            "https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        postImage:
+            "https://images.pexels.com/photos/3009442/pexels-photo-3009442.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        caption: "Puppy Setting in bench 🐶"),
+    Post(
+        username: "Mohammad Ali",
+        userImage:
+            "https://scontent.fdac70-1.fna.fbcdn.net/v/t1.0-9/30738426_605818749772878_1345233269490188288_o.jpg?_nc_cat=102&ccb=2&_nc_sid=174925&_nc_eui2=AeFduXaWj1fTuwHQIRAmCsw_-xFVSjSC7Hv7EVVKNILse298lpKKtwUIq9KzLSLf4nSGXhJC7aN3dE4e87OSnR12&_nc_ohc=u3CAdbS2BskAX_srGqf&_nc_ht=scontent.fdac70-1.fna&oh=87d729305770f98395f67e69038fdc8d&oe=6000F8E3",
+        postImage:
+            "https://scontent.fdac70-1.fna.fbcdn.net/v/t1.0-9/36643304_654730291548390_8717111640241209344_n.jpg?_nc_cat=100&ccb=2&_nc_sid=174925&_nc_eui2=AeF88y3UOCOsockKLBzGzmuCd6ITqOCBXEp3ohOo4IFcSp90h8pOCFSW5Urqfj_HXwsOcjKJRnDAVKuHIwDvqgVd&_nc_ohc=w3YT59knUB4AX9kVs9U&_nc_ht=scontent.fdac70-1.fna&oh=b13be45ccd98720a26ab757b131dcdc0&oe=600234FC",
+        caption:
+            "I am rarely bored alone; I am often bored in groups and crowds."),
+    Post(
+        username: "SoftniqueBd",
+        userImage:
+            "https://scontent.fdac70-1.fna.fbcdn.net/v/t1.0-9/119938653_114266310428911_4395422439865440555_n.png?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeEk_C0sZaJyO-H3QvUcbkXGoDdaQhO-UCOgN1pCE75QI1soqMsktjcKGA7Mx1oF-x9p1P7PSrOKCyWjP47-blTv&_nc_ohc=j1BMfYIwVPwAX9guE_D&_nc_ht=scontent.fdac70-1.fna&oh=db1f8133bdfa4461bc7a11ea6c3c6fc6&oe=6003A575",
+        postImage:
+            "https://www.cmswebsiteservices.com/sites/default/files/inline-images/image%206.png",
+        caption: "Where your imagination is our implementation"),
+    Post(
+        username: "Myra Feeney",
+        userImage:
+            "https://images.pexels.com/photos/4467683/pexels-photo-4467683.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        postImage:
+            "https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        caption: "Hanging Bridge, Miami"),
+    Post(
+        username: "Shawn Kuhn",
+        userImage:
+            "https://images.pexels.com/photos/3147528/pexels-photo-3147528.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        postImage:
+            "https://images.pexels.com/photos/2294478/pexels-photo-2294478.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        caption: "Perched bird 🐦"),
+    Post(
+        username: "Jonas",
+        userImage:
+            "https://images.pexels.com/photos/3686769/pexels-photo-3686769.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        postImage:
+            "https://images.pexels.com/photos/1232594/pexels-photo-1232594.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        caption:
+            "Life is better when you're surrounded by your best friends in the mountains"),
+    Post(
+        username: "Kamrul",
+        userImage:
+            "https://scontent.fdac70-1.fna.fbcdn.net/v/t31.0-8/24955642_1935639863356536_5134773327690101641_o.jpg?_nc_cat=110&ccb=2&_nc_sid=8bfeb9&_nc_eui2=AeFLlrZv0L0D3Ivb1nRpMWVh99ctkRfft8331y2RF9-3zcvVecsTGm9hGjyNsR_febs-2kaqx_zdeI40yQHIQpHD&_nc_ohc=9xkEXD63CtMAX96jtAi&_nc_ht=scontent.fdac70-1.fna&oh=76800ef5e1ab56870c66fce94c7b60e3&oe=600175B5",
+        postImage:
+            "https://scontent.fdac70-1.fna.fbcdn.net/v/t1.0-9/80237074_2401653553421829_1043396810606903296_o.jpg?_nc_cat=111&ccb=2&_nc_sid=730e14&_nc_eui2=AeGeamfTsUppqffe3ceCOIF-6HlMNeeFs9_oeUw154Wz38kZaRw-N-m6KB_1eX2f81GxZbaKZjgUkhbGPcROUibl&_nc_ohc=K9k0xmFT0ggAX96zUTa&_nc_oc=AQkRx5-1bBE3yJfi_gOq33uIJkddS0HTrsztDt5Uy7JwBnbCG_bnflv0pQRfrFs49AU&_nc_ht=scontent.fdac70-1.fna&oh=4d2fab1d4e45df5c7c91f0aaa0851795&oe=6000DEFA",
+        caption: "a halal pic. stop finding a spot nigga"),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -96,6 +172,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               Divider(),
               Container(
+                margin: EdgeInsets.symmetric(horizontal: 14),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -152,7 +229,181 @@ class _HomePageState extends State<HomePage> {
                         ],
                       );
                     }).toList(),
-                  ))
+                  )),
+
+              // posts
+              Container(
+                width: MediaQuery.of(context).size.width,
+                child: ListView.builder(
+                  shrinkWrap: true,
+                  physics: NeverScrollableScrollPhysics(),
+                  itemCount: posts.length,
+                  itemBuilder: (ctx, i) {
+                    return Container(
+                      color: Colors.white,
+                      child: Column(
+                        children: [
+                          Container(
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 10, vertical: 10),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Row(
+                                  children: [
+                                    ClipRRect(
+                                      borderRadius: BorderRadius.circular(40),
+                                      child: Image(
+                                        image: NetworkImage(
+                                          posts[i].userImage,
+                                        ),
+                                        width: 40,
+                                        height: 40,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 10,
+                                    ),
+                                    Text(
+                                      posts[i].username,
+                                    ),
+                                  ],
+                                ),
+                                IconButton(
+                                  icon: Icon(SimpleLineIcons.options),
+                                  onPressed: () {},
+                                ),
+                              ],
+                            ),
+                          ),
+                          Image(
+                            image: NetworkImage(
+                              posts[i].postImage,
+                            ),
+                            width: MediaQuery.of(context).size.width,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Row(
+                                children: [
+                                  IconButton(
+                                    icon: Icon(FontAwesome.heart_o),
+                                    onPressed: () {},
+                                  ),
+                                  IconButton(
+                                    icon: Icon(FontAwesome.comment_o),
+                                    onPressed: () {},
+                                  ),
+                                  IconButton(
+                                    icon: Icon(FontAwesome.send_o),
+                                    onPressed: () {},
+                                  ),
+                                ],
+                              ),
+                              IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(FontAwesome.bookmark_o))
+                            ],
+                          ),
+                          Container(
+                            width: MediaQuery.of(context).size.width,
+                            margin: EdgeInsets.symmetric(horizontal: 14),
+                            child: RichText(
+                              softWrap: true,
+                              overflow: TextOverflow.visible,
+                              text: TextSpan(children: [
+                                TextSpan(
+                                    text: "Liked By ",
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                    )),
+                                TextSpan(
+                                  text: "Noushad, ",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black,
+                                  ),
+                                ),
+                                TextSpan(
+                                  text: "Kamrul, ",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black,
+                                  ),
+                                ),
+                                TextSpan(
+                                  text: "Roosevelt, ",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black,
+                                  ),
+                                ),
+                                TextSpan(
+                                  text: "and ",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                                TextSpan(
+                                  text: "1550 others",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black,
+                                  ),
+                                ),
+                              ]),
+                            ),
+                          ),
+                          //caption
+
+                          Container(
+                            width: MediaQuery.of(context).size.width,
+                            margin: EdgeInsets.symmetric(
+                              horizontal: 14,
+                              vertical: 5,
+                            ),
+                            child: RichText(
+                              softWrap: true,
+                              overflow: TextOverflow.visible,
+                              text: TextSpan(children: [
+                                TextSpan(
+                                  text: posts[i].username,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black,
+                                  ),
+                                ),
+                                TextSpan(
+                                  text: " ${posts[i].caption}",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                  ),
+                                ),
+                              ]),
+                            ),
+                          ),
+
+                          //post date
+
+                          Container(
+                            margin: EdgeInsets.symmetric(horizontal: 14),
+                            alignment: Alignment.topLeft,
+                            child: Text(
+                              "December 2020",
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
+                  },
+                ),
+              )
             ],
           ),
         ),
